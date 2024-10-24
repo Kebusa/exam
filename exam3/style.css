@@ -1,0 +1,56 @@
+.cont1{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: blue;
+    transition: all 3s;
+}
+.cont1:hover{
+    transform: rotate(180deg);
+    transition: all 3s;
+    background-color: pink;
+    padding: 30px;
+}
+.cont2{
+    width: 700px;
+    height: 200px;
+    border: 1px solid black; 
+    position: relative;
+}
+.sircle{
+    position: absolute;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 999px;
+    background-color: red;
+    animation: animredsircle 5s infinite;
+}
+.cont3{
+    width: 300px;
+    height: 300px;
+}
+.download{
+    width: 300px;
+    height: 300px;
+    animation: animload 6s infinite;
+}
+@keyframes animload{
+
+    100%{
+        rotate: 360deg;
+    }
+
+}
+
+@keyframes animredsircle {
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
